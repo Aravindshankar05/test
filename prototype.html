@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Gibberish Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .wrapper {
+      padding: 30px;
+      border-radius: 20px;
+      background-color: #eeeeee;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .gibberish {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    /* Mobile: screen width less than 600px */
+    @media (max-width: 599px) {
+      body {
+        background-color: #ffb6c1;
+      }
+
+      .gibberish {
+        color: #880e4f;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Tablet/Desktop: screen width 600px and up */
+    @media (min-width: 600px) {
+      body {
+        background-color: #b3e5fc;
+      }
+
+      .gibberish {
+        color: #01579b;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Gibberish Mode</h1>
+    <div class="gibberish">
+      Blorp zindle floop! Gribble wazzit norkle drang.
+    </div>
+  </div>
+</body>
+</html>
